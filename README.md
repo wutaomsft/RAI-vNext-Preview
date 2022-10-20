@@ -56,7 +56,8 @@ Create an AzureML workspace by using the [configuration notebook](https://github
 
 ### Install the Azure CLI
 
-Install the Azure CLI by [following the instructions on the Microsoft docs site](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+1. Install the Azure CLI by [following the instructions on the Microsoft docs site](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+2. Install the ml extension by typing ``az extension add --name ml``.  More information is available [on the Microsoft docs site](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?tabs=public)
 
 ### Clone this repository
 
@@ -75,6 +76,9 @@ Run the following to make sure you are logged in to Azure:
 az login
 ```
 
+### (Windows) Download and configure PowerShell
+1. Install PowerShell 7.x. Follow [instructions on Microsoft doc site](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2).
+2. Configure miniconda with PowerShell.  Find "Anaconda Powershell Prompt"  created during Miniconda installation (it should be within the Anaconda3 group in Start Menu) and open it. Then, type ``conda init powershell``.  Then open PowerShell 7 and test ``conda`` command can run.  
 ### Run the setup script
 
 We provide a setup script which:
